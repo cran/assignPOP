@@ -568,7 +568,8 @@ assign.kfold <- function(x, k.fold = c(3,4,5), train.loci=c(0.1,0.25,0.5, 1), lo
     #
     stopCluster(cl)
     #Output a metadata file
-    cat(" Analysis Description (R - assignPOP ver.",packageVersion("assignPOP"),")\n",
+    version <- as.character(packageVersion("assignPOP"))
+    cat(" Analysis Description ( R - assignPOP ver.",version,")\n",
         "Perform assign.kfold() @", format(Sys.time()),"\n\n",
         "k.fold =",k.fold,"\n",
         "train.loci =",train.loci,"\n",
@@ -577,7 +578,7 @@ assign.kfold <- function(x, k.fold = c(3,4,5), train.loci=c(0.1,0.25,0.5, 1), lo
         "Data scaled and centerd:",scaled,"\n",
         "PC retaining criteria:",pca.PCs,"\n",
         "PCA for non-genetic data:",pca.method,"\n",
-        "Machine-learning model:",model,"\n\n",
+        "Machine learning model:",model,"\n\n",
         "Input Data (",datatype,")\n",
         "Number of individuals:",sum(popSizes),"\n",
         "Number of loci:",noLocus,"\n",
@@ -769,14 +770,15 @@ assign.kfold <- function(x, k.fold = c(3,4,5), train.loci=c(0.1,0.25,0.5, 1), lo
     }#for(k in k.fold)
     stopCluster(cl)
     #
-    cat(" Analysis Description (R - assignPOP ver.",packageVersion("assignPOP"),")\n",
+    version <- as.character(packageVersion("assignPOP"))
+    cat(" Analysis Description ( R - assignPOP ver.",version,")\n",
         "Perform assign.kfold() @", format(Sys.time()),"\n\n",
         "k.fold =",k.fold,"\n",
         "Total assignment tests =",sum(k.fold),"\n",
         "Data scaled and centerd:",scaled,"\n",
         "PCA for dimensionality reduction:",pca.method,"\n",
         "PC retaining criteria:",pca.PCs,"\n",
-        "Machine-learning model:",model,"\n\n",
+        "Machine learning model:",model,"\n\n",
         "Input Data (Non-genetics)\n",
         "Number of individuals:",sum(popSizes),"\n",
         "Number of non-genetic variables:",noVars,"\n",
