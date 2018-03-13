@@ -4,7 +4,7 @@
 #' @param dir A character string to specify the folder that has your K-fold cross-validation assignment results. A slash should be entered at the end.
 #' @param style An option for output style. If style=1, it creates the plot which individuals on the x-axis are in random order. If style=2, individuals are sorted by probabilities within each population. If style=3, individuals of different folds are in seperate plots. If style=4, individuals are separated by fold and sorted by probability.
 #' @param non.genetic A logical variable to specify if data are non-genetic. Set it TRUE if you're analyzing non-genetic alone.
-#' @return his function returns a stacked-bar plot using the ggplot2 library. Users can modified the plot (e.g., change color, text, etc.) using functions provided by ggplot2 library.
+#' @return This function returns a stacked-bar plot using the ggplot2 library. Users can modified the plot (e.g., change color, text, etc.) using functions provided by ggplot2 library.
 #' @import ggplot2
 #' @importFrom reshape2 melt
 #' @importFrom stats reorder
@@ -39,8 +39,7 @@ membership.plot <- function(dir=NULL, style=NULL, non.genetic=FALSE){
     ans_k <- readline("  Please enter one of the K numbers: ") #ask user to enter one of the K numbers
     ans_k <- str_trim(ans_k, side="both") #clean any space
     if(!ans_k %in% k.fold){
-      cat("\n  Entry is not correct.")
-      break
+      stop("Your entry is not correct.")
     }
   }
 
@@ -51,8 +50,7 @@ membership.plot <- function(dir=NULL, style=NULL, non.genetic=FALSE){
     ans_t <- readline("  Please enter one of the proportions: ")
     ans_t <- str_trim(ans_t, side="both")
     if(!ans_t %in% train.loci){
-      cat("\n  Entry is not correct.")
-      break
+      stop("Your entry is not correct.")
     }
     pltext <- paste0(" , training locus proportion = ",ans_t)
   #If there is only one proportion of training loci or it is non-genetic data only  
@@ -64,8 +62,7 @@ membership.plot <- function(dir=NULL, style=NULL, non.genetic=FALSE){
       ans_t <- readline("  Do data include genetic loci? (enter Y/N): ")
       ans_t <- str_trim(ans_t, side="both")
       if(!toupper(ans_t) %in% c("N","Y","NO","YES")){
-        cat("\n  Entry is not correct.")
-        break
+        stop("Your entry is not correct.")
       }
     }
     if(grepl(pattern="Y",toupper(ans_t))){
@@ -98,8 +95,7 @@ membership.plot <- function(dir=NULL, style=NULL, non.genetic=FALSE){
     style <- readline("  Please enter 1, 2, 3, or 4: ")
     style <- str_trim(style, side="both")
     if(!style %in% c(1,2,3,4)){
-      cat("\n  Entry is not correct.")
-      break
+      stop("Your entry is not correct.")
     }
   }
 

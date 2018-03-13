@@ -26,8 +26,8 @@ read.Genepop <- function(x, pop.names = NULL, haploid = FALSE, pos=1){
     pop.names <- paste0("pop.",seq_along(1:noPops))
   } else if(length(pop.names)>0){ #check if pop.names and number of pop match
     if(!length(pop.names)==noPops){
-      cat("\nError: Pop.names and number of pop in data not match...")
-      break } }
+      stop("Hey, your 'pop.names' and number of pop in data not match...")
+      } }
   
   #Extract locus name, save locus names in vector "locusNames"
   if (popIndex[1] == 2) {
@@ -96,8 +96,10 @@ read.Genepop <- function(x, pop.names = NULL, haploid = FALSE, pos=1){
         oneLocus_vector <- c(oneLocus_vector, eachlocus)
         
       }#for(n in 1:noInds)
-      #check if a locus is missing data across all individuals, if so, save the locus index
-      if(all(is.na(oneLocus_vector)) | length(unique(oneLocus_vector)) == 1){
+      #check if a locus is missing data or has only one allele across all individuals, if so, save the locus index
+      oneLocus_check <- NULL
+      oneLocus_check <- oneLocus_vector[!is.na(oneLocus_vector)]
+      if(length(unique(oneLocus_check)) <= 1){
         missLocusIndex <- c(missLocusIndex,m)
         #If not missing data, process data
       }else {
@@ -128,8 +130,10 @@ read.Genepop <- function(x, pop.names = NULL, haploid = FALSE, pos=1){
         }#for(j in c(1,2))
         oneLocus_vector <- c(oneLocus_vector, diploid)
       }#for(n in 1:noInds)
-      #check if locus is missing data across individuals
-      if(all(is.na(oneLocus_vector)) | length(unique(oneLocus_vector)) == 1){
+      #check if locus is missing data or has only one allele across individuals
+      oneLocus_check <- NULL
+      oneLocus_check <- oneLocus_vector[!is.na(oneLocus_vector)]
+      if(length(unique(oneLocus_check)) <= 1){
         missLocusIndex <- c(missLocusIndex, m)
       }else {
         #Convert to data frame and create dummy variables
