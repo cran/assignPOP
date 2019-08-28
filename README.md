@@ -36,6 +36,13 @@ Please visit our tutorial website for more infomration
 * [http://alexkychen.github.io/assignPOP/](http://alexkychen.github.io/assignPOP/)
 
 ## What's new
+Changes in ver. 1.1.7  (2019.8.26)
+- add broken-stick method for principal component selection in assign.MC, assign.kfold, and assign.X functions
+- update accuracy.MC, accuracy.kfold, assign.matrix to handle missing levels of predicted population in test results
+- update assign. and accuracy. functions to handle numeric population names
+
+<details>
+<summary>History</summary>
 Changes in ver. 1.1.6  (2019.6.8)
 - fix multiprocess issue in assign.kfold function
 
@@ -45,9 +52,6 @@ Changes in ver. 1.1.5  (2018.3.23)
 - Slightly modify levels method in accuracy.kfold
 - fix bugs in accuracy.plot for K-fold results
 - fix membership.plot title positioning and set text size to default
-
-<details>
-<summary>History</summary>
 
 Changes in ver. 1.1.4  (2018.3.8)
 - Fix missing assign.matrix function
@@ -61,7 +65,8 @@ Changes in ver. 1.1.2  (2017.5.13)
 </details>
 
 ## Cite this package
-Chen K-Y, Marschall EA, Sovic MG, Fries AC, Gibbs HL, Ludsin SA. assignPOP: An R package for population assignment using genetic, non-genetic, or integrated data in a machine-learning framework. *Methods in Ecology and Evolution*. 2018;9:439–446. https://doi.org/10.1111/2041-210X.12897
+Chen, K. Y., Marschall, E. A., Sovic, M. G., Fries, A. C., Gibbs, H. L., & Ludsin, S. A. (2018). assign POP: An R package for population assignment using genetic, non-genetic, or integrated data in a machine-learning framework. *Methods in Ecology and Evolution*. 9(2)439-446. https://doi.org/10.1111/2041-210X.12897
 
 ## Previous version
 Previous packages can be found and downloaded at the [releases page](https://github.com/alexkychen/assignPOP/releases)
+
