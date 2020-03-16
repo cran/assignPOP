@@ -1,10 +1,10 @@
-2283f8e6c865bad95215734535921f44 *DESCRIPTION
+36038a532a4e17f01af2b3c781bb1287 *DESCRIPTION
 7e7a23514222c20da77f1f62555cdd64 *NAMESPACE
 9c1e00f1ae0bc5848ae810501e14ce14 *R/accuracy.MC.R
 246f94d94b9c5bcca77d4c5f47adf8f2 *R/accuracy.kfold.R
 e79356233009fe72448c3812cd1a15ff *R/accuracy.plot.R
 daecee832767b9a97317375ed83846e7 *R/assign.MC.R
-2f228ee931154cf62e902261e8bb64dd *R/assign.X.R
+f232adf3cb52684b0b2e2af023164090 *R/assign.X.R
 9b2f3485e065903fff6177067b9ec9f0 *R/assign.kfold.R
 41850005a0979cb470bfc49eab407f90 *R/assign.matrix.R
 20faf8eddda467e50aeb4255687e4813 *R/check.loci.R
@@ -13,7 +13,7 @@ e7b4cf0557ad1c52fe929a0e30fa0a0b *R/compile.data.R
 b3a3d57afd1575cb1054aa912e90063a *R/read.Genepop.R
 2b05d1ca0384927253907f69fb2684b5 *R/read.Structure.R
 f2a9d824ea2cc13d411a5d575502f0d7 *R/reduce.allele.R
-86c8137df410712f274c2e9e6aac5fc0 *README.md
+1d4dda6b0a2c85e16b19e505fb4218d1 *README.md
 2c1ae2a61e455d28d3446fc4db739987 *inst/extdata/Rate.txt
 7c8cbc2e96e755fb552209fc3ff56c83 *inst/extdata/TinyGenepop.txt
 a85d4f58086004a40d9b61d26570940d *inst/extdata/TinyVars.csv
