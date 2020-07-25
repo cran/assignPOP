@@ -2,7 +2,7 @@ Package: assignPOP
 Type: Package
 Title: Population Assignment using Genetic, Non-Genetic or Integrated
         Data in a Machine Learning Framework
-Version: 1.1.9
+Version: 1.2.0
 Author: Kuan-Yu (Alex) Chen [aut, cre], Elizabeth A. Marschall [aut], Michael
     G. Sovic [aut], Anthony C. Fries [aut], H. Lisle Gibbs [aut], Stuart A. Ludsin
     [aut]
@@ -18,9 +18,9 @@ Imports: caret, doParallel, e1071, foreach, ggplot2, MASS, parallel,
         randomForest, reshape2, stringr, tree,
 Suggests: gtable, iterators, klaR, stringi, knitr, rmarkdown, testthat
 License: GPL (>= 2)
-RoxygenNote: 6.1.1
+RoxygenNote: 7.1.1
 Encoding: UTF-8
 NeedsCompilation: no
-Packaged: 2020-03-16 14:02:40 UTC; kchen
+Packaged: 2020-07-25 18:03:27 UTC; alexk
 Repository: CRAN
-Date/Publication: 2020-03-16 14:30:02 UTC
+Date/Publication: 2020-07-25 21:30:23 UTC
