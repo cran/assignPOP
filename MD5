@@ -1,8 +1,8 @@
-6f30ae87ea08a16ebb682a3d79902094 *DESCRIPTION
-7e7a23514222c20da77f1f62555cdd64 *NAMESPACE
+d24f56072c86d40798c05d828c7cb322 *DESCRIPTION
+8838a0e5d8bb48eb4203fdfd96a40305 *NAMESPACE
 da61d0302132f5fbaddc1176b4972820 *R/accuracy.MC.R
 3aaf8d78d690ead432b5fc95b9f3b835 *R/accuracy.kfold.R
-e79356233009fe72448c3812cd1a15ff *R/accuracy.plot.R
+7ce48d276e923f8094d8f64a6d989d84 *R/accuracy.plot.R
 d9d892cbf22da540075ee6d77790da85 *R/assign.MC.R
 5ad90053b0ed75e9cec27a20954dfa7a *R/assign.X.R
 36a7c0566af264740aeb4c7fa1e25afe *R/assign.kfold.R
@@ -13,7 +13,6 @@ c50c490d07202eb7e2c553f9e7a2faa4 *R/membership.plot.R
 aa3950410082323dff2fa88e2a5323ea *R/read.Genepop.R
 6ac48408c0ee9b3dfcd51990e1bba657 *R/read.Structure.R
 b6d225a0d3d2d240c462d456d6f48b3c *R/reduce.allele.R
-3f7788f7551f1f0dfa940a0113f566d8 *README.md
 2c1ae2a61e455d28d3446fc4db739987 *inst/extdata/Rate.txt
 7c8cbc2e96e755fb552209fc3ff56c83 *inst/extdata/TinyGenepop.txt
 a85d4f58086004a40d9b61d26570940d *inst/extdata/TinyVars.csv
@@ -63,13 +62,13 @@ f5db5b89c4f94bd7422f9c866c68d410 *tests/testthat/testData/GenepopUnk.txt
 383a287ea0a97b771d2c9cbc2718bb48 *tests/testthat/testData/StructureEx2.txt
 fadc2aa596b207378602556baa76599e *tests/testthat/testData/varDummy1.csv
 3f6fa94fe77313c7cd2fa635a5babfca *tests/testthat/testData/varDummy2.csv
-9a11211183bc32f574d0a70d0b9874a0 *tests/testthat/test_accuracy.R
+f52fb852bbd7abd4df51ab28aa80fe4f *tests/testthat/test_accuracy.R
 034db4134e1d8b4e7291bab15f2af74a *tests/testthat/test_assignMC.R
 5836b398c564ba58ae96e628b35e3aa0 *tests/testthat/test_assignX.R
 73022d7cad9d4b5cbeb07b58b3e60db7 *tests/testthat/test_assignkfold.R
 3ac2c88f5c96c3a86475c8764410d0bc *tests/testthat/test_assignmatrix.R
 58f7fb08c1a3d4d1a2ad56d60237f3d7 *tests/testthat/test_checkloci.R
 e9ee0e4e302ca534ffa153123f1e09fd *tests/testthat/test_compiledata.R
-e237e978c6bde1091b2e551829a5d79d *tests/testthat/test_membership.R
+7cab111119071b9d1f76bc124649fadb *tests/testthat/test_membership.R
 15c1b90f4337dcda63dff23d9faa68a3 *tests/testthat/test_readGenepopStructure.R
 1ef13dccf3f778fa23c9f9e5233861a1 *tests/testthat/test_reduceallele.R
